@@ -1,22 +1,5 @@
 ## Clojure
 
-As simple script:  
-```clojure
-(ns hello)
-(println "Hello from Clojure!")
-```
-
-As core.clj (lein app):  
-```clojure
-(ns hello-clj.core
-  (:gen-class))
-
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello from Clojure!"))
-```
-
 ### 1. Run as script
 
 ```shell script
