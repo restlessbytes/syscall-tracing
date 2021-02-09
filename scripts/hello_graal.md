@@ -8,6 +8,11 @@ Hello from C!
     seconds     calls    errors syscall
 ----------- --------- --------- ------------------
    0.003083       411        12 total
+$ strace -c -U time-total,calls,errors ./hello_lli 
+Hello from C!
+    seconds     calls    errors syscall
+----------- --------- --------- ----------------
+   0.000000        34         2 total
 ```
 
 ### Python
