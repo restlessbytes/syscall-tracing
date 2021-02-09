@@ -13,6 +13,12 @@ Hello from C!
     seconds     calls    errors syscall
 ----------- --------- --------- ----------------
    0.000000        34         2 total
+$ $GRAAL_HOME/languages/llvm/native/bin/clang -o hello_lli_st -static hello.c
+$ strace -c -U time-total,calls,errors ./hello_lli_st 
+Hello from C!
+    seconds     calls    errors syscall
+----------- --------- --------- ----------------
+   0.000523        12         1 total
 ```
 
 ### Python
